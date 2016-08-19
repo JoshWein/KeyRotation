@@ -44,10 +44,12 @@
     <div class="col-md-12">
         <div>
             <button class="btn" onclick="decrypt()">
+                <span class="glyphicon glyphicon-arrow-down glyphicon-align-right" aria-hidden="true"></span>
                 Decrypt
                 <span class="glyphicon glyphicon-arrow-down glyphicon-align-right" aria-hidden="true"></span>
             </button>
             <button class="btn" onclick="encrypt()">
+                <span class="glyphicon glyphicon-arrow-up glyphicon-align-right" aria-hidden="true"></span>
                 Encrypt
                 <span class="glyphicon glyphicon-arrow-up glyphicon-align-right" aria-hidden="true"></span>
             </button>
@@ -57,6 +59,22 @@
 <div class="row">
     <div class="col-md-12">
         <textarea class="form-control" placeholder="Clear text here" id="decryptedText"></textarea>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3>Notes</h3>
+        <li>Keys are always converted to lowercase.</li>
+        <li>Any non letter characters are ignored and passed through unencrypted/decrypted.</li>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3>Samples</h3>
+        <h4>Key</h4>
+        <p>ABCDABCDABCDABCDABCDABCDABCD</p>
+        <h4>Text</h4>
+        <p>CSASTPKVSIQUTGQUCSASTPIUAQJB</p>
     </div>
 </div>
 </body>
